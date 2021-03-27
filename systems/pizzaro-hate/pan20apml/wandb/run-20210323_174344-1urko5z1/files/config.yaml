@@ -1,0 +1,122 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.23
+    framework: tensorflow
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.5
+    t:
+      1:
+      - 3
+      - 5
+      4: 3.8.5
+      5: 0.10.23
+      8:
+      - 5
+classifier-C:
+  desc: null
+  value: 22458.780264488676
+classifier-class_weight:
+  desc: null
+  value: balanced
+classifier-intercept_scaling:
+  desc: null
+  value: 0.8769049589825447
+classifier-loss:
+  desc: null
+  value: hinge
+classifier-max_iter:
+  desc: null
+  value: 2000
+classifier-name:
+  desc: null
+  value: LinearSVC
+classifier-random_state:
+  desc: null
+  value: 42
+classifier-tol:
+  desc: null
+  value: 0.00014376187244711285
+feats-char-max_df:
+  desc: null
+  value: 1.0
+feats-char-min_df:
+  desc: null
+  value: 0.001
+feats-char-ngram_range:
+  desc: null
+  value:
+  - 1
+  - 6
+feats-char-preprocessor:
+  desc: null
+  value: preprocess_tweet_v2_1_1
+feats-name:
+  desc: null
+  value: word_char
+feats-word-max_df:
+  desc: null
+  value: 0.85
+feats-word-min_df:
+  desc: null
+  value: 0.05
+feats-word-ngram_range:
+  desc: null
+  value:
+  - 1
+  - 2
+feats-word-preprocessor:
+  desc: null
+  value: preprocess_tweet_v2_1_1
+feats-word-stop_words:
+  desc: null
+  value: null
+fmin-ds_name:
+  desc: null
+  value: pan20-author-profiling-training-2020-02-23
+fmin-ds_name_folds:
+  desc: null
+  value:
+  - -k10-0
+  - -k10-1
+  - -k10-2
+  - -k10-3
+  - -k10-4
+  - -k10-5
+  - -k10-6
+  - -k10-7
+  - -k10-8
+  - -k10-9
+fmin-hash_object:
+  desc: null
+  value: 46f2a631fc44535738a9ee3efa322d5a
+fmin-lang:
+  desc: null
+  value: en
+fmin-model_suffix:
+  desc: null
+  value: .alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a
+fmin-name:
+  desc: null
+  value: fmin
+fmin-read_xmls:
+  desc: null
+  value: .read_xmls_v0
+fmin-run_suffix:
+  desc: null
+  value: alc_pan20ap_sklearn_hyperopt_fmin_conf_best_en_read_xmls_v0_k10_v0_kf
+fmin-task:
+  desc: null
+  value: label
+fmin-wandb_enable:
+  desc: null
+  value: true
+fmin-wandb_save_model_enable:
+  desc: null
+  value: false
+fmin-xmls_base_directory:
+  desc: null
+  value: ../../pan20ap-ds

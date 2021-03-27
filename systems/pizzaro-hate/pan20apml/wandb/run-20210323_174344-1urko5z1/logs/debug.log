@@ -1,0 +1,27 @@
+2021-03-23 17:43:44,785 INFO    MainThread:43473 [wandb_setup.py:_flush():69] setting env: {}
+2021-03-23 17:43:44,785 INFO    MainThread:43473 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-03-23 17:43:44,785 INFO    MainThread:43473 [wandb_init.py:_log_setup():336] Logging user logs to /home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/wandb/run-20210323_174344-1urko5z1/logs/debug.log
+2021-03-23 17:43:44,785 INFO    MainThread:43473 [wandb_init.py:_log_setup():337] Logging internal logs to /home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/wandb/run-20210323_174344-1urko5z1/logs/debug-internal.log
+2021-03-23 17:43:44,786 INFO    MainThread:43473 [wandb_init.py:init():369] calling init triggers
+2021-03-23 17:43:44,786 INFO    MainThread:43473 [wandb_init.py:init():374] wandb.init called with sweep_config: {}
+config: {'classifier-name': 'LinearSVC', 'classifier-C': 22458.780264488676, 'classifier-class_weight': 'balanced', 'classifier-intercept_scaling': 0.8769049589825447, 'classifier-loss': 'hinge', 'classifier-max_iter': 2000, 'classifier-random_state': 42, 'classifier-tol': 0.00014376187244711285, 'feats-name': 'word_char', 'feats-char-max_df': 1.0, 'feats-char-min_df': 0.001, 'feats-char-ngram_range': (1, 6), 'feats-char-preprocessor': 'preprocess_tweet_v2_1_1', 'feats-word-max_df': 0.85, 'feats-word-min_df': 0.05, 'feats-word-ngram_range': (1, 2), 'feats-word-preprocessor': 'preprocess_tweet_v2_1_1', 'feats-word-stop_words': None, 'fmin-name': 'fmin', 'fmin-ds_name': 'pan20-author-profiling-training-2020-02-23', 'fmin-ds_name_folds': ('-k10-0', '-k10-1', '-k10-2', '-k10-3', '-k10-4', '-k10-5', '-k10-6', '-k10-7', '-k10-8', '-k10-9'), 'fmin-hash_object': '46f2a631fc44535738a9ee3efa322d5a', 'fmin-lang': 'en', 'fmin-model_suffix': '.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a', 'fmin-read_xmls': '.read_xmls_v0', 'fmin-run_suffix': 'alc_pan20ap_sklearn_hyperopt_fmin_conf_best_en_read_xmls_v0_k10_v0_kf', 'fmin-task': 'label', 'fmin-wandb_enable': True, 'fmin-wandb_save_model_enable': False, 'fmin-xmls_base_directory': '../../pan20ap-ds'}
+2021-03-23 17:43:44,786 INFO    MainThread:43473 [wandb_init.py:init():418] starting backend
+2021-03-23 17:43:44,786 INFO    MainThread:43473 [backend.py:_multiprocessing_setup():69] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-03-23 17:43:44,792 INFO    MainThread:43473 [backend.py:ensure_launched():123] starting backend process...
+2021-03-23 17:43:44,795 INFO    MainThread:43473 [backend.py:ensure_launched():127] started backend process with pid: 43512
+2021-03-23 17:43:44,795 INFO    MainThread:43473 [wandb_init.py:init():423] backend started and connected
+2021-03-23 17:43:44,797 INFO    MainThread:43473 [wandb_init.py:init():463] updated telemetry
+2021-03-23 17:43:44,797 INFO    MainThread:43473 [wandb_init.py:init():482] communicating current version
+2021-03-23 17:43:45,079 INFO    MainThread:43473 [wandb_init.py:init():487] got version response 
+2021-03-23 17:43:45,080 INFO    MainThread:43473 [wandb_init.py:init():495] communicating run to backend with 30 second timeout
+2021-03-23 17:43:45,297 INFO    MainThread:43473 [wandb_init.py:init():520] starting run threads in backend
+2021-03-23 17:43:45,930 INFO    MainThread:43473 [wandb_run.py:_console_start():1507] atexit reg
+2021-03-23 17:43:45,930 INFO    MainThread:43473 [wandb_run.py:_redirect():1370] redirect: SettingsConsole.REDIRECT
+2021-03-23 17:43:45,931 INFO    MainThread:43473 [wandb_run.py:_redirect():1375] Redirecting console.
+2021-03-23 17:43:45,931 INFO    MainThread:43473 [redirect.py:install():213] install start
+2021-03-23 17:43:45,931 INFO    MainThread:43473 [redirect.py:install():228] install stop
+2021-03-23 17:43:45,931 INFO    MainThread:43473 [redirect.py:install():213] install start
+2021-03-23 17:43:45,931 INFO    MainThread:43473 [redirect.py:install():228] install stop
+2021-03-23 17:43:45,931 INFO    MainThread:43473 [wandb_run.py:_redirect():1421] Redirects installed.
+2021-03-23 17:43:45,931 INFO    MainThread:43473 [wandb_init.py:init():544] run started, returning control to user process
+2021-03-23 17:45:47,260 INFO    MainThread:43473 [wandb_run.py:finish():1166] finishing run cbagdon/pan20apml/1urko5z1
