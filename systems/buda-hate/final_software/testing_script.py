@@ -73,7 +73,7 @@ if __name__ == "__main__":
     a = sys.argv[2]
     b = sys.argv[4]
     a = "../../../datasets/pan21-hate-test"
-    b = "../../../output/buda"
+    b = "../../../output/buda-hate"
     print(a)
     print(b)
     # location of used model files
