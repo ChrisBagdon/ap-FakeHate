@@ -1,0 +1,40 @@
+2021-03-23 15:06:29,994 INFO    MainThread:37405 [internal.py:wandb_internal():88] W&B internal server running at pid: 37405, started at: 2021-03-23 15:06:29.994785
+2021-03-23 15:06:29,995 DEBUG   HandlerThread:37405 [handler.py:handle_request():120] handle_request: check_version
+2021-03-23 15:06:29,995 INFO    WriterThread:37405 [datastore.py:open_for_write():77] open: /home/lolai/Documents/Uni/FakeHate/pizzaro/pan20ap/pan20apml/wandb/run-20210323_150629-2ng4l646/run-2ng4l646.wandb
+2021-03-23 15:06:29,996 DEBUG   SenderThread:37405 [sender.py:send():160] send: header
+2021-03-23 15:06:29,996 DEBUG   SenderThread:37405 [sender.py:send():160] send: request
+2021-03-23 15:06:29,996 DEBUG   SenderThread:37405 [sender.py:send_request():169] send_request: check_version
+2021-03-23 15:06:30,045 DEBUG   SenderThread:37405 [sender.py:send():160] send: run
+2021-03-23 15:06:30,258 INFO    SenderThread:37405 [sender.py:_start_run_threads():651] run started: 2ng4l646 with start time 1616508389
+2021-03-23 15:06:30,260 DEBUG   SenderThread:37405 [sender.py:send():160] send: summary
+2021-03-23 15:06:30,260 INFO    SenderThread:37405 [sender.py:_save_file():781] saving file wandb-summary.json with policy end
+2021-03-23 15:06:30,261 DEBUG   HandlerThread:37405 [handler.py:handle_request():120] handle_request: run_start
+2021-03-23 15:06:30,888 DEBUG   HandlerThread:37405 [meta.py:__init__():34] meta init
+2021-03-23 15:06:30,888 DEBUG   HandlerThread:37405 [meta.py:__init__():48] meta init done
+2021-03-23 15:06:30,888 DEBUG   HandlerThread:37405 [meta.py:probe():190] probe
+2021-03-23 15:06:30,893 DEBUG   HandlerThread:37405 [meta.py:_setup_git():180] setup git
+2021-03-23 15:06:30,901 DEBUG   HandlerThread:37405 [meta.py:_setup_git():187] setup git done
+2021-03-23 15:06:30,901 DEBUG   HandlerThread:37405 [meta.py:_save_pip():52] save pip
+2021-03-23 15:06:30,901 DEBUG   HandlerThread:37405 [meta.py:_save_pip():66] save pip done
+2021-03-23 15:06:30,902 DEBUG   HandlerThread:37405 [meta.py:probe():231] probe done
+2021-03-23 15:06:30,903 DEBUG   SenderThread:37405 [sender.py:send():160] send: files
+2021-03-23 15:06:30,904 INFO    SenderThread:37405 [sender.py:_save_file():781] saving file wandb-metadata.json with policy now
+2021-03-23 15:06:30,907 DEBUG   HandlerThread:37405 [handler.py:handle_request():120] handle_request: status
+2021-03-23 15:06:30,908 DEBUG   SenderThread:37405 [sender.py:send():160] send: request
+2021-03-23 15:06:30,908 DEBUG   SenderThread:37405 [sender.py:send_request():169] send_request: status
+2021-03-23 15:06:46,082 DEBUG   HandlerThread:37405 [handler.py:handle_request():120] handle_request: status
+2021-03-23 15:06:46,082 DEBUG   SenderThread:37405 [sender.py:send():160] send: request
+2021-03-23 15:06:46,083 DEBUG   SenderThread:37405 [sender.py:send_request():169] send_request: status
+2021-03-23 15:06:59,108 DEBUG   SenderThread:37405 [sender.py:send():160] send: stats
+2021-03-23 15:07:01,316 DEBUG   HandlerThread:37405 [handler.py:handle_request():120] handle_request: status
+2021-03-23 15:07:01,316 DEBUG   SenderThread:37405 [sender.py:send():160] send: request
+2021-03-23 15:07:01,316 DEBUG   SenderThread:37405 [sender.py:send_request():169] send_request: status
+2021-03-23 15:07:16,512 DEBUG   HandlerThread:37405 [handler.py:handle_request():120] handle_request: status
+2021-03-23 15:07:16,512 DEBUG   SenderThread:37405 [sender.py:send():160] send: request
+2021-03-23 15:07:16,512 DEBUG   SenderThread:37405 [sender.py:send_request():169] send_request: status
+2021-03-23 15:07:21,313 DEBUG   HandlerThread:37405 [handler.py:handle_request():120] handle_request: shutdown
+2021-03-23 15:07:21,313 DEBUG   SenderThread:37405 [sender.py:send():160] send: history
+2021-03-23 15:07:21,313 INFO    HandlerThread:37405 [handler.py:finish():624] shutting down handler
+2021-03-23 15:07:21,313 INFO    WriterThread:37405 [datastore.py:close():258] close: /home/lolai/Documents/Uni/FakeHate/pizzaro/pan20ap/pan20apml/wandb/run-20210323_150629-2ng4l646/run-2ng4l646.wandb
+2021-03-23 15:07:21,313 INFO    SenderThread:37405 [sender.py:finish():884] shutting down sender
+2021-03-23 15:07:23,570 INFO    MainThread:37405 [internal.py:handle_exit():78] Internal process exited

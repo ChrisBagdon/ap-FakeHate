@@ -1,0 +1,814 @@
+                                                                                                                           space
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]space                                                      {'classifier': {'name': 'LinearSVC', 'params': {'C': 22458.780264488676, 'class_weight': 'balanced', 'intercept_scaling': 0.8769049589825447, 'loss': 'hinge', 'max_iter': 2000, 'random_state': 42, 'tol': 0.00014376187244711285}}, 'feats': {'name': 'word_char', 'params': {'char': {'max_df': 1.0, 'min_df': 0.001, 'ngram_range': (1, 6), 'preprocessor': 'preprocess_tweet_v2_1_1'}, 'word': {'max_df': 0.85, 'min_df': 0.05, 'ngram_range': (1, 2), 'preprocessor': 'preprocess_tweet_v2_1_1', 'stop_words': None}}}, 'fmin': {'name': 'fmin', 'params': {'ds_name': 'pan20-author-profiling-training-2020-02-23', 'ds_name_folds': ('-k10-0', '-k10-1', '-k10-2', '-k10-3', '-k10-4', '-k10-5', '-k10-6', '-k10-7', '-k10-8', '-k10-9'), 'hash_object': '46f2a631fc44535738a9ee3efa322d5a', 'lang': 'en', 'model_suffix': '.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a', 'read_xmls': '.read_xmls_v0', 'run_suffix': 'alc_pan20ap_sklearn_hyperopt_fmin_conf_best_en_read_xmls_v0_k10_v0_kf', 'task': 'label', 'wandb_enable': True, 'wandb_save_model_enable': False, 'xmls_base_directory': '../../pan20ap-ds'}}}
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]{'classifier': {'name': 'LinearSVC', 'params': {'C': 22458.780264488676, 'class_weight': 'balanced', 'intercept_scaling': 0.8769049589825447, 'loss': 'hinge', 'max_iter': 2000, 'random_state': 42, 'tol': 0.00014376187244711285}}, 'feats': {'name': 'word_char', 'params': {'char': {'max_df': 1.0, 'min_df': 0.001, 'ngram_range': (1, 6), 'preprocessor': 'preprocess_tweet_v2_1_1'}, 'word': {'max_df': 0.85, 'min_df': 0.05, 'ngram_range': (1, 2), 'preprocessor': 'preprocess_tweet_v2_1_1', 'stop_words': None}}}, 'fmin': {'name': 'fmin', 'params': {'ds_name': 'pan20-author-profiling-training-2020-02-23', 'ds_name_folds': ('-k10-0', '-k10-1', '-k10-2', '-k10-3', '-k10-4', '-k10-5', '-k10-6', '-k10-7', '-k10-8', '-k10-9'), 'hash_object': '46f2a631fc44535738a9ee3efa322d5a', 'lang': 'en', 'model_suffix': '.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a', 'read_xmls': '.read_xmls_v0', 'run_suffix': 'alc_pan20ap_sklearn_hyperopt_fmin_conf_best_en_read_xmls_v0_k10_v0_kf', 'task': 'label', 'wandb_enable': True, 'wandb_save_model_enable': False, 'xmls_base_directory': '../../pan20ap-ds'}}}
+                                                     lang
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]lang                                                      en
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]en
+                                                     model_suffix
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]model_suffix                                                      .alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-0
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?].alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-0
+                                                     xmls_directory_train
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]xmls_directory_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-0-train/en
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-0-train/en
+                                                     truth_path_train
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]truth_path_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-0-train/en/truth.txt
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-0-train/en/truth.txt
+                                                     read_xmls
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]read_xmls                                                      read_xmls_v0
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     ./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-0.pkl
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-0.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]read_xmls_v0
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+                                                     (180, 3)
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?](180, 3)
+                                                     xmls_directory_dev
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]xmls_directory_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-0-dev/en
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-0-dev/en
+                                                     truth_path_dev
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]truth_path_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-0-dev/en/truth.txt
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-0-dev/en/truth.txt
+                                                     ./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-0.pkl
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-0.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     (20, 3)
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?](20, 3)
+                                                     [('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5cec7a070>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+  0%|          | 0/1 [00:01<?, ?trial/s, best loss=?][('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5cec7a070>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+                                                     LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+                                                     loss
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]loss                                                      -0.7
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]-0.7
+                                                     status
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]status                                                      ok
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]ok
+                                                     metric_classifier_accuracy
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]metric_classifier_accuracy                                                      0.7
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]0.7
+                                                     metric_classifier_precision_weighted
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]metric_classifier_precision_weighted                                                      0.7
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]0.7
+                                                     metric_classifier_recall_weighted
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]metric_classifier_recall_weighted                                                      0.7
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]0.7
+                                                     metric_classifier_fscore_weighted
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]metric_classifier_fscore_weighted                                                      0.7
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]0.7
+                                                     metric_classifier_support_weighted
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]metric_classifier_support_weighted                                                      None
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]None
+                                                     lang
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]lang                                                      en
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]en
+                                                     model_suffix
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]model_suffix                                                      .alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-1
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?].alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-1
+                                                     xmls_directory_train
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]xmls_directory_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-1-train/en
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-1-train/en
+                                                     truth_path_train
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]truth_path_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-1-train/en/truth.txt
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-1-train/en/truth.txt
+                                                     read_xmls
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]read_xmls                                                      read_xmls_v0
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     ./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-1.pkl
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-1.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]read_xmls_v0
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+                                                     (180, 3)
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?](180, 3)
+                                                     xmls_directory_dev
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]xmls_directory_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-1-dev/en
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-1-dev/en
+                                                     truth_path_dev
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]truth_path_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-1-dev/en/truth.txt
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-1-dev/en/truth.txt
+                                                     ./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-1.pkl
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-1.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     (20, 3)
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?](20, 3)
+                                                     [('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d13f0e50>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+  0%|          | 0/1 [00:13<?, ?trial/s, best loss=?][('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d13f0e50>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+                                                     LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+                                                     loss
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]loss                                                      -0.8
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]-0.8
+                                                     status
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]status                                                      ok
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]ok
+                                                     metric_classifier_accuracy
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]metric_classifier_accuracy                                                      0.8
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]0.8
+                                                     metric_classifier_precision_weighted
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]metric_classifier_precision_weighted                                                      0.8125
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]0.8125
+                                                     metric_classifier_recall_weighted
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]metric_classifier_recall_weighted                                                      0.8
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]0.8
+                                                     metric_classifier_fscore_weighted
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]metric_classifier_fscore_weighted                                                      0.7979797979797979
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]0.7979797979797979
+                                                     metric_classifier_support_weighted
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]metric_classifier_support_weighted                                                      None
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]None
+                                                     lang
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]lang                                                      en
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]en
+                                                     model_suffix
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]model_suffix                                                      .alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-2
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?].alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-2
+                                                     xmls_directory_train
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]xmls_directory_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-2-train/en
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-2-train/en
+                                                     truth_path_train
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]truth_path_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-2-train/en/truth.txt
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-2-train/en/truth.txt
+                                                     read_xmls
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]read_xmls                                                      read_xmls_v0
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     ./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-2.pkl
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-2.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]read_xmls_v0
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+                                                     (180, 3)
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?](180, 3)
+                                                     xmls_directory_dev
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]xmls_directory_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-2-dev/en
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-2-dev/en
+                                                     truth_path_dev
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]truth_path_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-2-dev/en/truth.txt
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-2-dev/en/truth.txt
+                                                     ./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-2.pkl
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-2.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     (20, 3)
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?](20, 3)
+                                                     [('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d1376040>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+  0%|          | 0/1 [00:25<?, ?trial/s, best loss=?][('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d1376040>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+                                                     LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+                                                     loss
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]loss                                                      -0.85
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]-0.85
+                                                     status
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]status                                                      ok
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]ok
+                                                     metric_classifier_accuracy
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]metric_classifier_accuracy                                                      0.85
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]0.85
+                                                     metric_classifier_precision_weighted
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]metric_classifier_precision_weighted                                                      0.8535353535353536
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]0.8535353535353536
+                                                     metric_classifier_recall_weighted
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]metric_classifier_recall_weighted                                                      0.85
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]0.85
+                                                     metric_classifier_fscore_weighted
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]metric_classifier_fscore_weighted                                                      0.8496240601503761
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]0.8496240601503761
+                                                     metric_classifier_support_weighted
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]metric_classifier_support_weighted                                                      None
+  0%|          | 0/1 [00:37<?, ?trial/s, best loss=?]None
+                                                     lang
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]lang                                                      en
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]en
+                                                     model_suffix
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]model_suffix                                                      .alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-3
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?].alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-3
+                                                     xmls_directory_train
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]xmls_directory_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-3-train/en
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-3-train/en
+                                                     truth_path_train
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]truth_path_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-3-train/en/truth.txt
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-3-train/en/truth.txt
+                                                     read_xmls
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]read_xmls                                                      read_xmls_v0
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     ./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-3.pkl
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-3.pkl
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+                                                     use read_xmls 
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     (180, 3)
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?](180, 3)
+                                                     xmls_directory_dev
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]xmls_directory_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-3-dev/en
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-3-dev/en
+                                                     truth_path_dev
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]truth_path_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-3-dev/en/truth.txt
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-3-dev/en/truth.txt
+                                                     ./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-3.pkl
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-3.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     (20, 3)
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?](20, 3)
+                                                     [('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d1376250>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+  0%|          | 0/1 [00:38<?, ?trial/s, best loss=?][('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d1376250>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+                                                     LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+                                                     loss
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]loss                                                      -0.6
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]-0.6
+                                                     status
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]status                                                      ok
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]ok
+                                                     metric_classifier_accuracy
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]metric_classifier_accuracy                                                      0.6
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]0.6
+                                                     metric_classifier_precision_weighted
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]metric_classifier_precision_weighted                                                      0.6041666666666667
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]0.6041666666666667
+                                                     metric_classifier_recall_weighted
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]metric_classifier_recall_weighted                                                      0.6
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]0.6
+                                                     metric_classifier_fscore_weighted
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]metric_classifier_fscore_weighted                                                      0.595959595959596
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]0.595959595959596
+                                                     metric_classifier_support_weighted
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]metric_classifier_support_weighted                                                      None
+  0%|          | 0/1 [00:49<?, ?trial/s, best loss=?]None
+                                                     lang
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]lang                                                      en
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]en
+                                                     model_suffix
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]model_suffix                                                      .alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-4
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?].alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-4
+                                                     xmls_directory_train
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]xmls_directory_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-4-train/en
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-4-train/en
+                                                     truth_path_train
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]truth_path_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-4-train/en/truth.txt
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-4-train/en/truth.txt
+                                                     read_xmls
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]read_xmls                                                      read_xmls_v0
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     ./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-4.pkl
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-4.pkl
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+                                                     use read_xmls 
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]read_xmls_v0
+
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+                                                     (180, 3)
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?](180, 3)
+                                                     xmls_directory_dev
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]xmls_directory_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-4-dev/en
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-4-dev/en
+                                                     truth_path_dev
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]truth_path_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-4-dev/en/truth.txt
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-4-dev/en/truth.txt
+                                                     ./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-4.pkl
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-4.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     (20, 3)
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?](20, 3)
+                                                     [('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d1376760>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+  0%|          | 0/1 [00:50<?, ?trial/s, best loss=?][('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d1376760>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+                                                     LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+                                                     loss
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]loss                                                      -0.55
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]-0.55
+                                                     status
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]status                                                      ok
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]ok
+                                                     metric_classifier_accuracy
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]metric_classifier_accuracy                                                      0.55
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]0.55
+                                                     metric_classifier_precision_weighted
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]metric_classifier_precision_weighted                                                      0.5505050505050505
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]0.5505050505050505
+                                                     metric_classifier_recall_weighted
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]metric_classifier_recall_weighted                                                      0.55
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]0.55
+                                                     metric_classifier_fscore_weighted
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]metric_classifier_fscore_weighted                                                      0.5488721804511277
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]0.5488721804511277
+                                                     metric_classifier_support_weighted
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]metric_classifier_support_weighted                                                      None
+  0%|          | 0/1 [01:01<?, ?trial/s, best loss=?]None
+                                                     lang
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]lang                                                      en
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]en
+                                                     model_suffix
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]model_suffix                                                      .alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-5
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?].alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-5
+                                                     xmls_directory_train
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]xmls_directory_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-5-train/en
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-5-train/en
+                                                     truth_path_train
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]truth_path_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-5-train/en/truth.txt
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-5-train/en/truth.txt
+                                                     read_xmls
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]read_xmls                                                      read_xmls_v0
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     ./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-5.pkl
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-5.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]read_xmls_v0
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+                                                     (180, 3)
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?](180, 3)
+                                                     xmls_directory_dev
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]xmls_directory_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-5-dev/en
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-5-dev/en
+                                                     truth_path_dev
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]truth_path_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-5-dev/en/truth.txt
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-5-dev/en/truth.txt
+                                                     ./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-5.pkl
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-5.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     (20, 3)
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?](20, 3)
+                                                     [('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d1376340>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+  0%|          | 0/1 [01:02<?, ?trial/s, best loss=?][('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d1376340>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+                                                     LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+  0%|          | 0/1 [01:13<?, ?trial/s, best loss=?]LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+                                                     loss
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]loss                                                      -0.65
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]-0.65
+                                                     status
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]status                                                      ok
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]ok
+                                                     metric_classifier_accuracy
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]metric_classifier_accuracy                                                      0.65
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]0.65
+                                                     metric_classifier_precision_weighted
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]metric_classifier_precision_weighted                                                      0.6515151515151515
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]0.6515151515151515
+                                                     metric_classifier_recall_weighted
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]metric_classifier_recall_weighted                                                      0.65
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]0.65
+                                                     metric_classifier_fscore_weighted
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]metric_classifier_fscore_weighted                                                      0.6491228070175439
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]0.6491228070175439
+                                                     metric_classifier_support_weighted
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]metric_classifier_support_weighted                                                      None
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]None
+                                                     lang
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]lang                                                      en
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]en
+                                                     model_suffix
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]model_suffix                                                      .alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-6
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?].alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-6
+                                                     xmls_directory_train
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]xmls_directory_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-6-train/en
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-6-train/en
+                                                     truth_path_train
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]truth_path_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-6-train/en/truth.txt
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-6-train/en/truth.txt
+                                                     read_xmls
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]read_xmls                                                      read_xmls_v0
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     ./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-6.pkl
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-6.pkl
+                                                     /home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+use read_xmls 
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]read_xmls_v0
+
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+                                                     (180, 3)
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?](180, 3)
+                                                     xmls_directory_dev
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]xmls_directory_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-6-dev/en
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-6-dev/en
+                                                     truth_path_dev
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]truth_path_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-6-dev/en/truth.txt
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-6-dev/en/truth.txt
+                                                     ./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-6.pkl
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-6.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     (20, 3)
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?](20, 3)
+                                                     [('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d1376310>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+  0%|          | 0/1 [01:14<?, ?trial/s, best loss=?][('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d1376310>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+                                                     LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+                                                     loss
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]loss                                                      -0.6
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]-0.6
+                                                     status
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]status                                                      ok
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]ok
+                                                     metric_classifier_accuracy
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]metric_classifier_accuracy                                                      0.6
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]0.6
+                                                     metric_classifier_precision_weighted
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]metric_classifier_precision_weighted                                                      0.6
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]0.6
+                                                     metric_classifier_recall_weighted
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]metric_classifier_recall_weighted                                                      0.6
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]0.6
+                                                     metric_classifier_fscore_weighted
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]metric_classifier_fscore_weighted                                                      0.6
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]0.6
+                                                     metric_classifier_support_weighted
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]metric_classifier_support_weighted                                                      None
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]None
+                                                     lang
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]lang                                                      en
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]en
+                                                     model_suffix
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]model_suffix                                                      .alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-7
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?].alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-7
+                                                     xmls_directory_train
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]xmls_directory_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-7-train/en
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-7-train/en
+                                                     truth_path_train
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]truth_path_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-7-train/en/truth.txt
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-7-train/en/truth.txt
+                                                     read_xmls
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]read_xmls                                                      read_xmls_v0
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     ./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-7.pkl
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-7.pkl
+                                                     use read_xmls 
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]read_xmls_v0
+
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+                                                     (180, 3)
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?](180, 3)
+                                                     xmls_directory_dev
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]xmls_directory_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-7-dev/en
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-7-dev/en
+                                                     truth_path_dev
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]truth_path_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-7-dev/en/truth.txt
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-7-dev/en/truth.txt
+                                                     ./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-7.pkl
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-7.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     (20, 3)
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?](20, 3)
+                                                     [('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d13efeb0>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+  0%|          | 0/1 [01:26<?, ?trial/s, best loss=?][('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d13efeb0>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+                                                     LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+                                                     loss
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]loss                                                      -0.6
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]-0.6
+                                                     status
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]status                                                      ok
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]ok
+                                                     metric_classifier_accuracy
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]metric_classifier_accuracy                                                      0.6
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]0.6
+                                                     metric_classifier_precision_weighted
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]metric_classifier_precision_weighted                                                      0.6
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]0.6
+                                                     metric_classifier_recall_weighted
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]metric_classifier_recall_weighted                                                      0.6
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]0.6
+                                                     metric_classifier_fscore_weighted
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]metric_classifier_fscore_weighted                                                      0.6
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]0.6
+                                                     metric_classifier_support_weighted
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]metric_classifier_support_weighted                                                      None
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]None
+                                                     lang
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]lang                                                      en
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]en
+                                                     model_suffix
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]model_suffix                                                      .alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-8
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?].alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-8
+                                                     xmls_directory_train
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]xmls_directory_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-8-train/en
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-8-train/en
+                                                     truth_path_train
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]truth_path_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-8-train/en/truth.txt
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-8-train/en/truth.txt
+                                                     read_xmls
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]read_xmls                                                      read_xmls_v0
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     ./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-8.pkl
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-8.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]read_xmls_v0
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+                                                     (180, 3)
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?](180, 3)
+                                                     xmls_directory_dev
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]xmls_directory_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-8-dev/en
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-8-dev/en
+                                                     truth_path_dev
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]truth_path_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-8-dev/en/truth.txt
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-8-dev/en/truth.txt
+                                                     ./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-8.pkl
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-8.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     (20, 3)
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?](20, 3)
+                                                     [('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d13efdf0>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+  0%|          | 0/1 [01:38<?, ?trial/s, best loss=?][('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa5d13efdf0>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+                                                     LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+                                                     loss
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]loss                                                      -0.75
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]-0.75
+                                                     status
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]status                                                      ok
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]ok
+                                                     metric_classifier_accuracy
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]metric_classifier_accuracy                                                      0.75
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]0.75
+                                                     metric_classifier_precision_weighted
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]metric_classifier_precision_weighted                                                      0.7747252747252747
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]0.7747252747252747
+                                                     metric_classifier_recall_weighted
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]metric_classifier_recall_weighted                                                      0.75
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]0.75
+                                                     metric_classifier_fscore_weighted
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]metric_classifier_fscore_weighted                                                      0.7442455242966751
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]0.7442455242966751
+                                                     metric_classifier_support_weighted
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]metric_classifier_support_weighted                                                      None
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]None
+                                                     lang
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]lang                                                      en
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]en
+                                                     model_suffix
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]model_suffix                                                      .alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-9
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?].alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-9
+                                                     xmls_directory_train
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]xmls_directory_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-9-train/en
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-9-train/en
+                                                     truth_path_train
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]truth_path_train                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-9-train/en/truth.txt
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-9-train/en/truth.txt
+                                                     read_xmls
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]read_xmls                                                      read_xmls_v0
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     ./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-9.pkl
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]./out/df_train.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-9.pkl
+                                                     use read_xmls 
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]read_xmls_v0
+
+/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/pan20ap_utils.py:40: ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+  df = pd.read_csv(
+                                                     (180, 3)
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?](180, 3)
+                                                     xmls_directory_dev
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]xmls_directory_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-9-dev/en
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-9-dev/en
+                                                     truth_path_dev
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]truth_path_dev                                                      ../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-9-dev/en/truth.txt
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]../../pan20ap-ds/pan20-author-profiling-training-2020-02-23-k10-9-dev/en/truth.txt
+                                                     ./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-9.pkl
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]./out/df_dev.en.alc-sklearn-hyperopt.46f2a631fc44535738a9ee3efa322d5a-k10-9.pkl
+                                                     use read_xmls 
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]use read_xmls                                                       read_xmls_v0
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?]read_xmls_v0
+                                                     (20, 3)
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?](20, 3)
+                                                     [('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa68b44ca90>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+  0%|          | 0/1 [01:50<?, ?trial/s, best loss=?][('word_ngram', TfidfVectorizer(max_df=0.85, min_df=0.05, ngram_range=(1, 2),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True,
+                tokenizer=<bound method TweetTokenizer.tokenize of <nltk.tokenize.casual.TweetTokenizer object at 0x7fa68b44ca90>>)), ('char_ngram', TfidfVectorizer(analyzer='char', min_df=0.001, ngram_range=(1, 6),
+                preprocessor=<function preprocess_tweet_v2_1_1 at 0x7fa5d1285790>,
+                sublinear_tf=True))]
+                                                     LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]LinearSVC(C=22458.780264488676, class_weight='balanced',
+          intercept_scaling=0.8769049589825447, loss='hinge', max_iter=2000,
+          random_state=42, tol=0.00014376187244711285)
+                                                     loss
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]loss                                                      -0.75
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]-0.75
+                                                     status
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]status                                                      ok
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]ok
+                                                     metric_classifier_accuracy
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]metric_classifier_accuracy                                                      0.75
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]0.75
+                                                     metric_classifier_precision_weighted
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]metric_classifier_precision_weighted                                                      0.7525252525252526
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]0.7525252525252526
+                                                     metric_classifier_recall_weighted
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]metric_classifier_recall_weighted                                                      0.75
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]0.75
+                                                     metric_classifier_fscore_weighted
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]metric_classifier_fscore_weighted                                                      0.7493734335839598
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]0.7493734335839598
+                                                     metric_classifier_support_weighted
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]metric_classifier_support_weighted                                                      None
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]None
+                                                     loss
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]loss                                                      [-0.7, -0.8, -0.85, -0.6, -0.55, -0.65, -0.6, -0.6, -0.75, -0.75]
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?][-0.7, -0.8, -0.85, -0.6, -0.55, -0.65, -0.6, -0.6, -0.75, -0.75]
+                                                     status
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]status                                                      ['ok', 'ok', 'ok', 'ok', 'ok', 'ok', 'ok', 'ok', 'ok', 'ok']
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]['ok', 'ok', 'ok', 'ok', 'ok', 'ok', 'ok', 'ok', 'ok', 'ok']
+                                                     metric_classifier_accuracy
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]metric_classifier_accuracy                                                      [0.7, 0.8, 0.85, 0.6, 0.55, 0.65, 0.6, 0.6, 0.75, 0.75]
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?][0.7, 0.8, 0.85, 0.6, 0.55, 0.65, 0.6, 0.6, 0.75, 0.75]
+                                                     metric_classifier_precision_weighted
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]metric_classifier_precision_weighted                                                      [0.7, 0.8125, 0.8535353535353536, 0.6041666666666667, 0.5505050505050505, 0.6515151515151515, 0.6, 0.6, 0.7747252747252747, 0.7525252525252526]
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?][0.7, 0.8125, 0.8535353535353536, 0.6041666666666667, 0.5505050505050505, 0.6515151515151515, 0.6, 0.6, 0.7747252747252747, 0.7525252525252526]
+                                                     metric_classifier_recall_weighted
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]metric_classifier_recall_weighted                                                      [0.7, 0.8, 0.85, 0.6, 0.55, 0.65, 0.6, 0.6, 0.75, 0.75]
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?][0.7, 0.8, 0.85, 0.6, 0.55, 0.65, 0.6, 0.6, 0.75, 0.75]
+                                                     metric_classifier_fscore_weighted
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]metric_classifier_fscore_weighted                                                      [0.7, 0.7979797979797979, 0.8496240601503761, 0.595959595959596, 0.5488721804511277, 0.6491228070175439, 0.6, 0.6, 0.7442455242966751, 0.7493734335839598]
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?][0.7, 0.7979797979797979, 0.8496240601503761, 0.595959595959596, 0.5488721804511277, 0.6491228070175439, 0.6, 0.6, 0.7442455242966751, 0.7493734335839598]
+                                                     metric_classifier_support_weighted
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?]metric_classifier_support_weighted                                                      [None, None, None, None, None, None, None, None, None, None]
+  0%|          | 0/1 [02:02<?, ?trial/s, best loss=?][None, None, None, None, None, None, None, None, None, None]

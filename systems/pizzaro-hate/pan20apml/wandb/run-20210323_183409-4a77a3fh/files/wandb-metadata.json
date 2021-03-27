@@ -1,0 +1,29 @@
+{
+    "os": "Linux-5.8.0-45-generic-x86_64-with-glibc2.29",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-03-23T17:34:10.701478",
+    "startedAt": "2021-03-23T17:34:09.581950",
+    "docker": null,
+    "gpu": "GeForce RTX 3070",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--conf",
+        "alc_pan20ap_sklearn_hyperopt_fmin_conf_best_es_read_xmls_v0_k10_v1_kf",
+        "--max_evals",
+        "1"
+    ],
+    "state": "running",
+    "program": "alc_pan20ap_sklearn_hyperopt_fmin.py",
+    "codePath": "pan20apml/alc_pan20ap_sklearn_hyperopt_fmin.py",
+    "git": {
+        "remote": "https://github.com/jpizarrom/pan20ap.git",
+        "commit": "e9213a75e3e246fd33a520e1539fc4a13af48852"
+    },
+    "email": null,
+    "root": "/home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap",
+    "host": "Nerv3",
+    "username": "lolai",
+    "executable": "/home/lolai/Documents/Uni/FakeHate/pizzaro/venv2/bin/python"
+}

@@ -1,0 +1,57 @@
+2021-03-23 17:43:45,030 INFO    MainThread:43512 [internal.py:wandb_internal():88] W&B internal server running at pid: 43512, started at: 2021-03-23 17:43:45.030420
+2021-03-23 17:43:45,031 DEBUG   HandlerThread:43512 [handler.py:handle_request():120] handle_request: check_version
+2021-03-23 17:43:45,031 INFO    WriterThread:43512 [datastore.py:open_for_write():77] open: /home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/wandb/run-20210323_174344-1urko5z1/run-1urko5z1.wandb
+2021-03-23 17:43:45,032 DEBUG   SenderThread:43512 [sender.py:send():160] send: header
+2021-03-23 17:43:45,032 DEBUG   SenderThread:43512 [sender.py:send():160] send: request
+2021-03-23 17:43:45,032 DEBUG   SenderThread:43512 [sender.py:send_request():169] send_request: check_version
+2021-03-23 17:43:45,080 DEBUG   SenderThread:43512 [sender.py:send():160] send: run
+2021-03-23 17:43:45,294 INFO    SenderThread:43512 [sender.py:_start_run_threads():651] run started: 1urko5z1 with start time 1616517824
+2021-03-23 17:43:45,296 DEBUG   SenderThread:43512 [sender.py:send():160] send: summary
+2021-03-23 17:43:45,296 INFO    SenderThread:43512 [sender.py:_save_file():781] saving file wandb-summary.json with policy end
+2021-03-23 17:43:45,297 DEBUG   HandlerThread:43512 [handler.py:handle_request():120] handle_request: run_start
+2021-03-23 17:43:45,911 DEBUG   HandlerThread:43512 [meta.py:__init__():34] meta init
+2021-03-23 17:43:45,911 DEBUG   HandlerThread:43512 [meta.py:__init__():48] meta init done
+2021-03-23 17:43:45,911 DEBUG   HandlerThread:43512 [meta.py:probe():190] probe
+2021-03-23 17:43:45,917 DEBUG   HandlerThread:43512 [meta.py:_setup_git():180] setup git
+2021-03-23 17:43:45,925 DEBUG   HandlerThread:43512 [meta.py:_setup_git():187] setup git done
+2021-03-23 17:43:45,926 DEBUG   HandlerThread:43512 [meta.py:_save_pip():52] save pip
+2021-03-23 17:43:45,926 DEBUG   HandlerThread:43512 [meta.py:_save_pip():66] save pip done
+2021-03-23 17:43:45,926 DEBUG   HandlerThread:43512 [meta.py:probe():231] probe done
+2021-03-23 17:43:45,928 DEBUG   SenderThread:43512 [sender.py:send():160] send: files
+2021-03-23 17:43:45,928 INFO    SenderThread:43512 [sender.py:_save_file():781] saving file wandb-metadata.json with policy now
+2021-03-23 17:43:45,932 DEBUG   HandlerThread:43512 [handler.py:handle_request():120] handle_request: status
+2021-03-23 17:43:45,933 DEBUG   SenderThread:43512 [sender.py:send():160] send: request
+2021-03-23 17:43:45,933 DEBUG   SenderThread:43512 [sender.py:send_request():169] send_request: status
+2021-03-23 17:44:01,090 DEBUG   HandlerThread:43512 [handler.py:handle_request():120] handle_request: status
+2021-03-23 17:44:01,090 DEBUG   SenderThread:43512 [sender.py:send():160] send: request
+2021-03-23 17:44:01,090 DEBUG   SenderThread:43512 [sender.py:send_request():169] send_request: status
+2021-03-23 17:44:14,125 DEBUG   SenderThread:43512 [sender.py:send():160] send: stats
+2021-03-23 17:44:16,256 DEBUG   HandlerThread:43512 [handler.py:handle_request():120] handle_request: status
+2021-03-23 17:44:16,256 DEBUG   SenderThread:43512 [sender.py:send():160] send: request
+2021-03-23 17:44:16,256 DEBUG   SenderThread:43512 [sender.py:send_request():169] send_request: status
+2021-03-23 17:44:31,558 DEBUG   HandlerThread:43512 [handler.py:handle_request():120] handle_request: status
+2021-03-23 17:44:31,558 DEBUG   SenderThread:43512 [sender.py:send():160] send: request
+2021-03-23 17:44:31,559 DEBUG   SenderThread:43512 [sender.py:send_request():169] send_request: status
+2021-03-23 17:44:44,327 DEBUG   SenderThread:43512 [sender.py:send():160] send: stats
+2021-03-23 17:44:46,744 DEBUG   HandlerThread:43512 [handler.py:handle_request():120] handle_request: status
+2021-03-23 17:44:46,744 DEBUG   SenderThread:43512 [sender.py:send():160] send: request
+2021-03-23 17:44:46,744 DEBUG   SenderThread:43512 [sender.py:send_request():169] send_request: status
+2021-03-23 17:45:01,905 DEBUG   HandlerThread:43512 [handler.py:handle_request():120] handle_request: status
+2021-03-23 17:45:01,906 DEBUG   SenderThread:43512 [sender.py:send():160] send: request
+2021-03-23 17:45:01,906 DEBUG   SenderThread:43512 [sender.py:send_request():169] send_request: status
+2021-03-23 17:45:14,506 DEBUG   SenderThread:43512 [sender.py:send():160] send: stats
+2021-03-23 17:45:17,075 DEBUG   HandlerThread:43512 [handler.py:handle_request():120] handle_request: status
+2021-03-23 17:45:17,075 DEBUG   SenderThread:43512 [sender.py:send():160] send: request
+2021-03-23 17:45:17,075 DEBUG   SenderThread:43512 [sender.py:send_request():169] send_request: status
+2021-03-23 17:45:32,269 DEBUG   HandlerThread:43512 [handler.py:handle_request():120] handle_request: status
+2021-03-23 17:45:32,269 DEBUG   SenderThread:43512 [sender.py:send():160] send: request
+2021-03-23 17:45:32,269 DEBUG   SenderThread:43512 [sender.py:send_request():169] send_request: status
+2021-03-23 17:45:44,691 DEBUG   SenderThread:43512 [sender.py:send():160] send: stats
+2021-03-23 17:45:47,261 DEBUG   SenderThread:43512 [sender.py:send():160] send: history
+2021-03-23 17:45:47,262 DEBUG   SenderThread:43512 [sender.py:send():160] send: summary
+2021-03-23 17:45:47,262 DEBUG   HandlerThread:43512 [handler.py:handle_request():120] handle_request: shutdown
+2021-03-23 17:45:47,262 INFO    HandlerThread:43512 [handler.py:finish():624] shutting down handler
+2021-03-23 17:45:47,263 INFO    SenderThread:43512 [sender.py:_save_file():781] saving file wandb-summary.json with policy end
+2021-03-23 17:45:47,263 INFO    SenderThread:43512 [sender.py:finish():884] shutting down sender
+2021-03-23 17:45:48,263 INFO    WriterThread:43512 [datastore.py:close():258] close: /home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/wandb/run-20210323_174344-1urko5z1/run-1urko5z1.wandb
+2021-03-23 17:45:48,639 INFO    MainThread:43512 [internal.py:handle_exit():78] Internal process exited

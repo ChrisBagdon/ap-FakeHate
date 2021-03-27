@@ -1,0 +1,40 @@
+2021-03-27 17:26:28,306 INFO    MainThread:5127 [internal.py:wandb_internal():88] W&B internal server running at pid: 5127, started at: 2021-03-27 17:26:28.305966
+2021-03-27 17:26:28,306 DEBUG   HandlerThread:5127 [handler.py:handle_request():120] handle_request: check_version
+2021-03-27 17:26:28,307 INFO    WriterThread:5127 [datastore.py:open_for_write():77] open: /home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/wandb/run-20210327_172628-2mbe8ioy/run-2mbe8ioy.wandb
+2021-03-27 17:26:28,307 DEBUG   SenderThread:5127 [sender.py:send():160] send: header
+2021-03-27 17:26:28,307 DEBUG   SenderThread:5127 [sender.py:send():160] send: request
+2021-03-27 17:26:28,307 DEBUG   SenderThread:5127 [sender.py:send_request():169] send_request: check_version
+2021-03-27 17:26:28,379 DEBUG   SenderThread:5127 [sender.py:send():160] send: run
+2021-03-27 17:26:28,570 INFO    SenderThread:5127 [sender.py:_start_run_threads():651] run started: 2mbe8ioy with start time 1616862388
+2021-03-27 17:26:28,572 DEBUG   SenderThread:5127 [sender.py:send():160] send: summary
+2021-03-27 17:26:28,572 INFO    SenderThread:5127 [sender.py:_save_file():781] saving file wandb-summary.json with policy end
+2021-03-27 17:26:28,573 DEBUG   HandlerThread:5127 [handler.py:handle_request():120] handle_request: run_start
+2021-03-27 17:26:29,152 DEBUG   HandlerThread:5127 [meta.py:__init__():34] meta init
+2021-03-27 17:26:29,152 DEBUG   HandlerThread:5127 [meta.py:__init__():48] meta init done
+2021-03-27 17:26:29,152 DEBUG   HandlerThread:5127 [meta.py:probe():190] probe
+2021-03-27 17:26:29,157 DEBUG   HandlerThread:5127 [meta.py:_setup_git():180] setup git
+2021-03-27 17:26:29,165 DEBUG   HandlerThread:5127 [meta.py:_setup_git():187] setup git done
+2021-03-27 17:26:29,165 DEBUG   HandlerThread:5127 [meta.py:_save_pip():52] save pip
+2021-03-27 17:26:29,165 DEBUG   HandlerThread:5127 [meta.py:_save_pip():66] save pip done
+2021-03-27 17:26:29,165 DEBUG   HandlerThread:5127 [meta.py:probe():231] probe done
+2021-03-27 17:26:29,167 DEBUG   SenderThread:5127 [sender.py:send():160] send: files
+2021-03-27 17:26:29,167 INFO    SenderThread:5127 [sender.py:_save_file():781] saving file wandb-metadata.json with policy now
+2021-03-27 17:26:29,171 DEBUG   HandlerThread:5127 [handler.py:handle_request():120] handle_request: status
+2021-03-27 17:26:29,171 DEBUG   SenderThread:5127 [sender.py:send():160] send: request
+2021-03-27 17:26:29,171 DEBUG   SenderThread:5127 [sender.py:send_request():169] send_request: status
+2021-03-27 17:26:44,360 DEBUG   HandlerThread:5127 [handler.py:handle_request():120] handle_request: status
+2021-03-27 17:26:44,361 DEBUG   SenderThread:5127 [sender.py:send():160] send: request
+2021-03-27 17:26:44,361 DEBUG   SenderThread:5127 [sender.py:send_request():169] send_request: status
+2021-03-27 17:26:57,345 DEBUG   SenderThread:5127 [sender.py:send():160] send: stats
+2021-03-27 17:26:59,662 DEBUG   HandlerThread:5127 [handler.py:handle_request():120] handle_request: status
+2021-03-27 17:26:59,662 DEBUG   SenderThread:5127 [sender.py:send():160] send: request
+2021-03-27 17:26:59,662 DEBUG   SenderThread:5127 [sender.py:send_request():169] send_request: status
+2021-03-27 17:27:14,852 DEBUG   HandlerThread:5127 [handler.py:handle_request():120] handle_request: status
+2021-03-27 17:27:14,852 DEBUG   SenderThread:5127 [sender.py:send():160] send: request
+2021-03-27 17:27:14,852 DEBUG   SenderThread:5127 [sender.py:send_request():169] send_request: status
+2021-03-27 17:27:21,467 DEBUG   HandlerThread:5127 [handler.py:handle_request():120] handle_request: shutdown
+2021-03-27 17:27:21,468 DEBUG   SenderThread:5127 [sender.py:send():160] send: history
+2021-03-27 17:27:21,468 INFO    HandlerThread:5127 [handler.py:finish():624] shutting down handler
+2021-03-27 17:27:21,468 INFO    SenderThread:5127 [sender.py:finish():884] shutting down sender
+2021-03-27 17:27:21,468 INFO    WriterThread:5127 [datastore.py:close():258] close: /home/lolai/Documents/Uni/FakeHate/pizzaro-hate/pan20ap/pan20apml/wandb/run-20210327_172628-2mbe8ioy/run-2mbe8ioy.wandb
+2021-03-27 17:27:22,927 INFO    MainThread:5127 [internal.py:handle_exit():78] Internal process exited
