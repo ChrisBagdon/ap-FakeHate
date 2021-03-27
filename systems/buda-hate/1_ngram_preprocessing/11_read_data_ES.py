@@ -7,7 +7,7 @@ import pandas as pd
 
 # Reading in Spanish meta data (spreader or not)
 
-r = open('../../datasets/pan21-hate-train/es/truth.txt', "r")
+r = open('../../../datasets/pan21-hate-train/es/truth.txt', "r")
 data = r.read().split("\n")
 idk = []  # id
 spreader = []  # yes or no
@@ -24,7 +24,7 @@ meta_data["spreader"] = spreader
 
 # Reading in and concatenating Spanish tweets
 
-pathlist = Path('../../datasets/pan21-hate-train/es').glob('**/*.xml')
+pathlist = Path('../../../datasets/pan21-hate-train/es').glob('**/*.xml')
 ids = []
 x_raw = []
 for path in pathlist:  # iterate files

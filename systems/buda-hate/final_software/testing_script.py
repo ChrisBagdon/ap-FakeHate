@@ -72,8 +72,8 @@ def cleaning_v2(tweet_lista):
 if __name__ == "__main__":
     a = sys.argv[2]
     b = sys.argv[4]
-    a = "../../datasets/pan21-hate-test"
-    b = "../../output/buda"
+    a = "../../../datasets/pan21-hate-test"
+    b = "../../../output/buda"
     print(a)
     print(b)
     # location of used model files

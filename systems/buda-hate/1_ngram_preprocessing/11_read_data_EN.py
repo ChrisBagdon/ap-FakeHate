@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 
 # Reading in English meta data (spreader or not)
-r = open('../../datasets/pan21-hate-train/en/truth.txt', "r")
+r = open('../../../datasets/pan21-hate-train/en/truth.txt', "r")
 data = r.read().split("\n")
 idk = []  # id
 spreader = []  # yes or no
@@ -23,7 +23,7 @@ meta_data["spreader"] = spreader
 
 # Reading in and concatenating English tweets
 
-pathlist = Path('../../datasets/pan21-hate-train/en').glob('**/*.xml')
+pathlist = Path('../../../datasets/pan21-hate-train/en').glob('**/*.xml')
 ids = []
 x_raw = []
 for path in pathlist:  # iterate files

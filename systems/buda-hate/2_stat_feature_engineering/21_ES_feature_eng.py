@@ -25,7 +25,7 @@ import xml.etree.ElementTree as ET
 #                                                      ##
 #########################################################
 # meta
-r = open('../../datasets/pan21-hate-train/es/truth.txt', "r")
+r = open('../../../datasets/pan21-hate-train/es/truth.txt', "r")
 data = r.read().split("\n")
 idk = []  # id
 spreader = []  # yes or no
@@ -41,7 +41,7 @@ meta_data["ID"] = idk
 meta_data["spreader"] = spreader
 
 # reading and concatenating tweets
-pathlist = Path('../../datasets/pan21-hate-train/es').glob('**/*.xml')
+pathlist = Path('../../../datasets/pan21-hate-train/es').glob('**/*.xml')
 ids = []
 x_raw = []
 s = 0
