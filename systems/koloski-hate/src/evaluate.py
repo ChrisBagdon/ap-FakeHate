@@ -24,6 +24,7 @@ def evaluate(path, path_out):
     path_out_es = os.path.join(path_out, 'extended_tfidf/es')
     os.mkdir(path_out_es)
     extended_tfidf.fit(path_es, path_out_es, 'es')
+
     """
     path_en = os.path.join(path, 'en')
     path_out_en = os.path.join(path_out, 'fullbatch_tfidf/en')
@@ -42,6 +43,7 @@ def evaluate(path, path_out):
     path_out_es = os.path.join(path_out, 'tira_sep_lang/es')
     os.mkdir(path_out_es)
     tira_sep_lang.fit(path_es, path_out_es, 'es')
+
 
     path_en = os.path.join(path, 'en')
     path_out_en = os.path.join(path_out, 'tfidf_tira/en')

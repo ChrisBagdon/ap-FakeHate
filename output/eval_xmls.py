@@ -14,7 +14,7 @@ truth.txt must be in same directory as XMLs
 """
 
 parser = argparse.ArgumentParser()
-# parser.add_argument("-i", "--input", help="Input Directory Path", required=True)
+parser.add_argument("-i", "--input", help="Input Directory Path", required=True)
 # parser.add_argument("-o", "--output", help="Output Directory Path", required=True)
 args = parser.parse_args()
 
@@ -68,7 +68,7 @@ def main():
     # Once again for ES
 
     os.chdir(owd)
-    input = "." + "/es"
+    input = args.input + "/es"
     truth_data2 = pd.read_csv('./es/truth.txt', sep=':::', names=['author_id', 'type'], engine="python")
     predictions2 = create_data_frame(input)
     predictionary2 = {}

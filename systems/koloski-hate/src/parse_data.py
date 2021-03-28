@@ -40,7 +40,7 @@ def docs(_dir=config.PATH_DATA_EN):
 
 def exportTest(path):
     """ path: path to dataset folder 
-        returns documents parsed raw in a list and their indexs """
+        returns documents parsed raw in a list and their indeces """
     X = docs(path)
     final_texts = []
     cnt = 0

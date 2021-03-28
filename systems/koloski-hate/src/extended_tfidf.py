@@ -91,7 +91,7 @@ def train(X, Y, output=False):
         predictions = clf2.predict(X_test)
         acc_lr = accuracy_score(predictions, y_test)
         logging.info("Test accuracy score SVM {}".format(acc_lr))
-        trained_models[nfeat] = (clf1, clf2)
+        trained_models[nfeat] = (clf1, clf2, tokenizer)
         report.append([nfeat, acc_lr, acc_svm])
 
     dfx = pd.DataFrame(report)
@@ -115,8 +115,9 @@ def train(X, Y, output=False):
     else:
         index = 1
 
+    tokenizer_final = trained_models[final_feature_number][2]
     clf_final = trained_models[final_feature_number][index]
-    return tokenizer, clf_final
+    return tokenizer_final, clf_final
 
 
 def export():

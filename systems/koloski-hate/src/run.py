@@ -29,9 +29,9 @@ if __name__ == "__main__":
     print(args.model)
     model_key = args.model[0]
     """
-    #extended_tfidf.export()
-    #fullbatch_tfidf.export()
-    #tfidf_tira.exportMerged()
-    tira_sep_lang.export()
+    extended_tfidf.export()
+    # fullbatch_tfidf.export()
+    # tfidf_tira.exportMerged()
+    # tira_sep_lang.export()
 
 
