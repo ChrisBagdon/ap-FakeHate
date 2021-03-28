@@ -30,29 +30,29 @@ data_es_tw_cons = pd.read_pickle(loc_data + 'es_data_tweet_consist.pkl')
 # best hyperparameters found for individual models
 xgb_pl = Pipeline(
     [('vect', TfidfVectorizer(min_df=7, ngram_range=(1, 2), use_idf=True, smooth_idf=True, sublinear_tf=True)),
-     ('xgb', xgb.XGBClassifier(colsample_bytree=0.5, eta=0.1, max_depth=3, n_estimators=200, subsample=0.6))])
+     ('xgb', xgb.XGBClassifier(colsample_bytree=0.5, eta=0.1, max_depth=4, n_estimators=300, subsample=0.7))])
 
 lr_pl = Pipeline(
-    [('vect', TfidfVectorizer(min_df=6, ngram_range=(2, 2), use_idf=True, smooth_idf=True, sublinear_tf=True)),
-     ('lr', LogisticRegression(C=100, penalty='l2', solver='liblinear', fit_intercept=False, verbose=0))])
+    [('vect', TfidfVectorizer(min_df=7, ngram_range=(2, 2), use_idf=True, smooth_idf=True, sublinear_tf=True)),
+     ('lr', LogisticRegression(C=1000, penalty='l2', solver='liblinear', fit_intercept=False, verbose=0))])
 
 rf_pl = Pipeline(
     [('vect', TfidfVectorizer(min_df=8, ngram_range=(2, 2), use_idf=True, smooth_idf=True, sublinear_tf=True)),
-     ('rf', RandomForestClassifier(n_estimators=300, min_samples_leaf=5, criterion='gini'))])
+     ('rf', RandomForestClassifier(n_estimators=400, min_samples_leaf=7, criterion='gini'))])
 
 svm_pl = Pipeline(
-    [('vect', TfidfVectorizer(ngram_range=(1, 2), min_df=10, sublinear_tf=True, use_idf=True, smooth_idf=True)),
+    [('vect', TfidfVectorizer(ngram_range=(1, 2), min_df=6, sublinear_tf=True, use_idf=True, smooth_idf=True)),
      ('rf', SVC(C=10, kernel='linear', verbose=False, probability=True))])
 
-xgb_twc = xgb.XGBClassifier(colsample_bynode=1.0,
+xgb_twc = xgb.XGBClassifier(colsample_bynode=0.8,
                             colsample_bytree=0.8,
                             gamma=4,
                             learning_rate=0.3,
-                            max_depth=3,
+                            max_depth=4,
                             min_child_weight=2,
-                            n_estimators=100,
-                            reg_alpha=0.7,
-                            subsample=1.0)
+                            n_estimators=150,
+                            reg_alpha=0.3,
+                            subsample=0.8)
 
 X = data_es_v1["Tweets"]
 y = data_es_v1['spreader']
@@ -70,12 +70,12 @@ for train_index, test_index in cv.split(X, y):
     y_train, y_test = y[train_index], y[test_index]
     preds['y_truth'] = y[test_index].values
     # LR
-    X_train, X_test = data_es_v1["Tweets"][train_index], data_es_v1["Tweets"][test_index]
+    X_train, X_test = data_es_v2["Tweets"][train_index], data_es_v2["Tweets"][test_index]
     lr_pl.fit(X_train, y_train)
     preds["lr"] = lr_pl.predict_proba(X_test)[:, 1]
 
     # SVM
-    X_train, X_test = data_es_v1["Tweets"][train_index], data_es_v1["Tweets"][test_index]
+    X_train, X_test = data_es_v2["Tweets"][train_index], data_es_v2["Tweets"][test_index]
     svm_pl.fit(X_train, y_train)
     preds["svm"] = svm_pl.predict_proba(X_test)[:, 1]
 
@@ -85,7 +85,7 @@ for train_index, test_index in cv.split(X, y):
     preds["rf"] = rf_pl.predict_proba(X_test)[:, 1]
 
     # XGB
-    X_train, X_test = data_es_v2["Tweets"][train_index], data_es_v2["Tweets"][test_index]
+    X_train, X_test = data_es_v1["Tweets"][train_index], data_es_v1["Tweets"][test_index]
     xgb_pl.fit(X_train, y_train)
     preds["xgb"] = xgb_pl.predict_proba(X_test)[:, 1]
 
@@ -107,12 +107,12 @@ for train_index, test_index in cv.split(X, y):
     y_train, y_test = y[train_index], y[test_index]
     preds['y_truth'] = y[test_index].values
     # LR
-    X_train, X_test = data_es_v1["Tweets"][train_index], data_es_v1["Tweets"][test_index]
+    X_train, X_test = data_es_v2["Tweets"][train_index], data_es_v2["Tweets"][test_index]
     lr_pl.fit(X_train, y_train)
     preds["lr"] = lr_pl.predict_proba(X_test)[:, 1]
 
     # SVM
-    X_train, X_test = data_es_v1["Tweets"][train_index], data_es_v1["Tweets"][test_index]
+    X_train, X_test = data_es_v2["Tweets"][train_index], data_es_v2["Tweets"][test_index]
     svm_pl.fit(X_train, y_train)
     preds["svm"] = svm_pl.predict_proba(X_test)[:, 1]
 
@@ -122,7 +122,7 @@ for train_index, test_index in cv.split(X, y):
     preds["rf"] = rf_pl.predict_proba(X_test)[:, 1]
 
     # XGB
-    X_train, X_test = data_es_v2["Tweets"][train_index], data_es_v1["Tweets"][test_index]
+    X_train, X_test = data_es_v1["Tweets"][train_index], data_es_v1["Tweets"][test_index]
     xgb_pl.fit(X_train, y_train)
     preds["xgb"] = xgb_pl.predict_proba(X_test)[:, 1]
 

@@ -144,16 +144,16 @@ if __name__ == "__main__":
 
     # load vectorizers
     vect_rf = pickle.load(open(model_loc + 'en\\rf_vectorizer_v1.pickle', "rb"))
-    X_test_en_RF = vect_rf.transform(en_data_v2["Tweets"])
+    X_test_en_RF = vect_rf.transform(en_data_v1["Tweets"])
 
     vect_SVM = pickle.load(open(model_loc + 'en\\svm_vectorizer_v1.pickle', "rb"))
-    X_test_en_SVM = vect_SVM.transform(en_data_v1["Tweets"])
+    X_test_en_SVM = vect_SVM.transform(en_data_v2["Tweets"])
 
     vect_LR = pickle.load(open(model_loc + 'en\\lr_vectorizer_v1.pickle', "rb"))
-    X_test_en_LR = vect_LR.transform(en_data_v1["Tweets"])
+    X_test_en_LR = vect_LR.transform(en_data_v2["Tweets"])
 
     vect_XGB = pickle.load(open(model_loc + 'en\\vect_xgb_en_v1.pickle', "rb"))
-    X_test_en_XGB = vect_XGB.transform(en_data_v1["Tweets"])
+    X_test_en_XGB = vect_XGB.transform(en_data_v2["Tweets"])
 
     # load models
     # RF
@@ -279,7 +279,7 @@ if __name__ == "__main__":
     results_en["xgb_tw"] = en_twcons_pred
 
     # load model
-    en_ensemble = joblib.load(model_loc + "en\\ensemble_en_logreg")
+    en_ensemble = joblib.load(model_loc + "en\\ensemble_en_linreg")
     # predictions
     en_preds = en_ensemble.predict(results_en)
 
@@ -327,6 +327,11 @@ if __name__ == "__main__":
     es_data["ID"] = ids_es
     es_data["Tweets"] = x_test_es
 
+    # DF for text cleaning v2 for n-gram models
+    es_data_v2 = pd.DataFrame()
+    es_data_v2["ID"] = ids
+    es_data_v2["Tweets"] = x_test
+
     # tweetwise df without further cleaning for descriptive stat model
     es_data_tw = pd.DataFrame()
     es_data_tw["ID"] = ids_tw
@@ -340,16 +345,17 @@ if __name__ == "__main__":
     # clean Spanish data
     feed_list = es_data["Tweets"].tolist()
     es_data["Tweets"] = cleaning_v1(feed_list)
+    es_data_v2["Tweets"] = cleaning_v2(feed_list)
 
     # load vectorizers
     vect_rf = pickle.load(open(model_loc + 'es\\rf_vectorizer_v1_es.pickle', "rb"))
     X_test_es_RF = vect_rf.transform(es_data["Tweets"])
 
     vect_SVM = pickle.load(open(model_loc + 'es\\svm_vectorizer_v1_es.pickle', "rb"))
-    X_test_es_SVM = vect_SVM.transform(es_data["Tweets"])
+    X_test_es_SVM = vect_SVM.transform(es_data_v2["Tweets"])
 
     vect_LR = pickle.load(open(model_loc + 'es\\lr_vectorizer_v1_es.pickle', "rb"))
-    X_test_es_LR = vect_LR.transform(es_data["Tweets"])
+    X_test_es_LR = vect_LR.transform(es_data_v2["Tweets"])
 
     vect_XGB = pickle.load(open(model_loc + 'es\\vect_xgb_es_v1.pickle', "rb"))
     X_test_es_XGB = vect_XGB.transform(es_data["Tweets"])

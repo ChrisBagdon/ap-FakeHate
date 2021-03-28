@@ -95,4 +95,4 @@ print(classification_report(result_es_v2["y_truth"],
                             linreg.predict(result_es_v2.iloc[:, 1:])))
 
 # save out logistic regression for aggregation
-pickle.dump(logreg, open('../models/es/es_aggregate_lr.sav', 'wb'))
+pickle.dump(linreg, open('../models/es/es_aggregate_lr.sav', 'wb'))
