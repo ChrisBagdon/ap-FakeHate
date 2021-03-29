@@ -11,7 +11,7 @@ data_v2 = pd.read_csv('../../data/clean_en_data_v2.tsv', delimiter='\t', encodin
 
 # LR
 lr_vectorizer_v1 = TfidfVectorizer(ngram_range=(1, 1), min_df=3, sublinear_tf=True, use_idf=True, smooth_idf=True)
-lr_X_v1 = lr_vectorizer_v1.fit_transform(data_v1["Tweets"])
+lr_X_v1 = lr_vectorizer_v1.fit_transform(data_v2["Tweets"])
 pickle.dump(lr_vectorizer_v1, open('../../models/en/lr_vectorizer_v1.pickle', 'wb'))
 
 # SVM

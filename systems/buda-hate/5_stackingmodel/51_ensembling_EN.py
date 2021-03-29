@@ -99,4 +99,4 @@ print(classification_report(result_en_v2["y_truth"],
                             linreg.predict(result_en_v2.iloc[:, 1:])))
 
 # save out logistic regression for aggregation
-joblib.dump(linreg, '../models/en/ensemble_en_linreg')
+joblib.dump(logreg, '../models/en/ensemble_en_linreg')

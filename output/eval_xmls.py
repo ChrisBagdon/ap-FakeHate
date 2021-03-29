@@ -45,8 +45,8 @@ def create_data_frame(input_folder):
 
 def main():
     owd = os.getcwd()
-    input = "." + "/en"
-    truth_data = pd.read_csv('./en/truth.txt', sep=':::', names=['author_id', 'type'], engine="python")
+    input = args.input + "/en"
+    truth_data = pd.read_csv(input + '/truth.txt', sep=':::', names=['author_id', 'type'], engine="python")
     predictions = create_data_frame(input)
     predictionary = {}
     goldictionary = {}
@@ -69,7 +69,7 @@ def main():
 
     os.chdir(owd)
     input = args.input + "/es"
-    truth_data2 = pd.read_csv('./es/truth.txt', sep=':::', names=['author_id', 'type'], engine="python")
+    truth_data2 = pd.read_csv(input + '/truth.txt', sep=':::', names=['author_id', 'type'], engine="python")
     predictions2 = create_data_frame(input)
     predictionary2 = {}
     goldictionary2 = {}
