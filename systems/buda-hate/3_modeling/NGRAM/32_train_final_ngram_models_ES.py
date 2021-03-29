@@ -18,7 +18,7 @@ lr_v1.fit(lr_X_v1, data_v1_es['spreader'])
 pickle.dump(lr_v1, open('../../models/es/lr_v1_es.sav', 'wb'))
 
 # SVM
-svm_vectorizer_v1 = TfidfVectorizer(ngram_range=(1, 2), min_df=6, sublinear_tf=True, use_idf=True, smooth_idf=True)
+svm_vectorizer_v1 = TfidfVectorizer(ngram_range=(1, 2), min_df=7, sublinear_tf=True, use_idf=True, smooth_idf=True)
 svm_X_v1 = svm_vectorizer_v1.fit_transform(data_v2_es["Tweets"])
 pickle.dump(svm_vectorizer_v1, open('../../models/es/svm_vectorizer_v1_es.pickle', 'wb'))
 svm_v1 = svm.SVC(C=10, kernel='linear', verbose=False, probability=True)

@@ -41,7 +41,7 @@ rf_pl = Pipeline(
      ('rf', RandomForestClassifier(n_estimators=400, min_samples_leaf=7, criterion='gini'))])
 
 svm_pl = Pipeline(
-    [('vect', TfidfVectorizer(ngram_range=(1, 2), min_df=6, sublinear_tf=True, use_idf=True, smooth_idf=True)),
+    [('vect', TfidfVectorizer(ngram_range=(1, 2), min_df=7, sublinear_tf=True, use_idf=True, smooth_idf=True)),
      ('rf', SVC(C=10, kernel='linear', verbose=False, probability=True))])
 
 xgb_twc = xgb.XGBClassifier(colsample_bynode=0.8,
