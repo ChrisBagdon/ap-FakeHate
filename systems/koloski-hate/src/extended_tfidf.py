@@ -147,6 +147,9 @@ def fit(path, out_path=config.PATH_OUT, lang='en'):
     """Fits data from param(path), outputs xml file as out_path"""
     # print("TUKA")
     tokenizer, clf = _import(lang)
+    print(tokenizer.get_params)
+    print(clf.best_estimator_.coef_.shape[-1])
+    print(clf.best_params_)
     # print("DATA IMPORTED")
     # XRaw,YRaw = parse_data.export()
     test_texts, name_idx = parse_data.exportTest(path)

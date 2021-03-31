@@ -1,0 +1,7 @@
+alpha: 		0.0005
+l1_ratio:	0.6
+loss:		hinge
+penalty:	elasticnet
+power_t:	0.5
+
+n_components:	768

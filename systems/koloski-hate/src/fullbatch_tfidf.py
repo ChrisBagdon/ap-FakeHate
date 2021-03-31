@@ -100,6 +100,8 @@ def train(X, Y, output=False):
         index = 1
 
     clf_final = trained_models[final_feature_number][index]
+    tokenizer, feature_names, data_matrix = get_features(dataframe, max_num_feat=final_feature_number)
+    reducer = TruncatedSVD(n_components=min(1024, final_feature_number * len(feature_names) - 1)).fit(data_matrix)
     return tokenizer, clf_final, reducer
 
 
@@ -135,6 +137,8 @@ def fit(path, out_path=config.PATH_OUT, lang='en'):
     """Fits data from param(path), outputs xml file as out_path"""
     # print("TUKA")
     tokenizer, clf, reducer = _import(lang)
+    print(clf.best_estimator_.coef_.shape[-1])
+    print(clf.best_params_)
     # print("DATA IMPORTED")
     # XRaw,YRaw = parse_data.export()
     test_texts, name_idx = parse_data.exportTest(path)

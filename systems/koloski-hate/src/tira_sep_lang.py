@@ -109,13 +109,13 @@ def train(X, Y, output=False):
     clf_final, dim = trained_models[final_feature_number]
     clf_final = clf_final[index]
     tokenizer, feature_names, data_matrix = get_features(dataframe, max_num_feat=final_feature_number)
-    reducer = TruncatedSVD(n_components=min(dim, nfeat * len(feature_names) - 1)).fit(data_matrix)
-    return tokenizer, clf_final, reducer
+    reducer = TruncatedSVD(n_components=min(dim, final_feature_number * len(feature_names) - 1)).fit(data_matrix)
+    return tokenizer, clf_final, reducer, sorted_dfx
 
 
 def export():
     XRaw, YRaw = parse_data.export(config.PATH_DATA_EN, config.PATH_DATA_EN_TRUTH)
-    tokenizer, clf, reducer = train(XRaw, YRaw)
+    tokenizer, clf, reducer, blob = train(XRaw, YRaw)
     with open(os.path.join(config.PATH_MODELS, "tokenizer_5fcv_en.pkl"), mode='wb') as f:
         pickle.dump(tokenizer, f)
     with open(os.path.join(config.PATH_MODELS, "clf_5fcv_en.pkl"), mode='wb') as f:
@@ -124,13 +124,15 @@ def export():
         pickle.dump(reducer, f)
     # ES
     XRaw, YRaw = parse_data.export(config.PATH_DATA_ES, config.PATH_DATA_ES_TRUTH)
-    tokenizer, clf, reducer = train(XRaw, YRaw)
+    tokenizer, clf, reducer, blob2 = train(XRaw, YRaw)
     with open(os.path.join(config.PATH_MODELS, "tokenizer_5fcv_es.pkl"), mode='wb') as f:
         pickle.dump(tokenizer, f)
     with open(os.path.join(config.PATH_MODELS, "clf_5fcv_es.pkl"), mode='wb') as f:
         pickle.dump(clf, f)
     with open(os.path.join(config.PATH_MODELS, "reducer_5fcv_es.pkl"), mode='wb') as f:
         pickle.dump(reducer, f)
+    print(blob[-1, :])
+    print(blob2[-1, :])
 
 
 def _import(lang, path_in=config.PATH_MODELS):
@@ -145,6 +147,9 @@ def fit(path, out_path=config.PATH_OUT, lang='en'):
     """Fits data from param(path), outputs xml file as out_path"""
     # print("TUKA")
     tokenizer, clf, reducer = _import(lang)
+    print(clf.best_estimator_.coef_.shape[-1])
+    print(clf.best_params_)
+    print(reducer.get_params())
     # print("DATA IMPORTED")
     # XRaw,YRaw = parse_data.export()
     test_texts, name_idx = parse_data.exportTest(path)
