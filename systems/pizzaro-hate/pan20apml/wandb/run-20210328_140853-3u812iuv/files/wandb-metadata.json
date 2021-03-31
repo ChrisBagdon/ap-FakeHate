@@ -1,0 +1,29 @@
+{
+    "os": "Linux-5.8.0-48-generic-x86_64-with-glibc2.29",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-03-28T12:08:54.208381",
+    "startedAt": "2021-03-28T12:08:53.104900",
+    "docker": null,
+    "gpu": "GeForce RTX 3070",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--conf",
+        "alc_pan20ap_sklearn_hyperopt_fmin_conf_best_es_read_xmls_v0_k10_v1_kf_sample",
+        "--max_evals",
+        "1"
+    ],
+    "state": "running",
+    "program": "alc_pan20ap_sklearn_hyperopt_fmin.py",
+    "codePath": "systems/pizzaro-hate/pan20apml/alc_pan20ap_sklearn_hyperopt_fmin.py",
+    "git": {
+        "remote": "https://github.com/ChrisBagdon/ap-FakeHate.git",
+        "commit": "330add23b14c36abec2f48b19982311a2c1df374"
+    },
+    "email": "chrisbagdon@gmail.com",
+    "root": "/home/lolai/Documents/Uni/FakeHate/ap-FakeHate",
+    "host": "Nerv3",
+    "username": "lolai",
+    "executable": "/home/lolai/Documents/Uni/FakeHate/pizzaro/venv2/bin/python"
+}

@@ -111,8 +111,8 @@ def main():
 
     output_folder = os.path.join(output_folder)
 
-    runWithLang(input_folder, output_folder,'en')
-    #runWithLang(input_folder, output_folder,'es')
+    #runWithLang(input_folder, output_folder,'en')
+    runWithLang(input_folder, output_folder,'es')
 
 
 if __name__ == "__main__":

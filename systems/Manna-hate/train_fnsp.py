@@ -83,7 +83,7 @@ def Model(X_train, X_test, y_train, y_test):
         models[model].fit(X_train, y_train)
         predictions[model] = models[model].predict(X_test)
         accuracy[model] = accuracy_score(y_test, predictions[model])
-
+        print(accuracy[model])
     print('Best Model', max(accuracy, key=accuracy.get))
     print(classification_report(y_test, predictions[max(accuracy, key=accuracy.get)]))
     model = models[max(accuracy, key=accuracy.get)]
