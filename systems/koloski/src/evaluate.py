@@ -34,6 +34,7 @@ def evaluate(path, path_out):
     os.mkdir(path_out_es)
     fullbatch_tfidf.fit(path_es, path_out_es, 'es')
     """
+
     path_en = os.path.join(path, 'en')
     path_out_en = os.path.join(path_out, 'tira_sep_lang/en')
     os.mkdir(path_out_en)
@@ -65,6 +66,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     print(args.input_dir)
     """
-    input_dir = "../../../datasets/pan21-hate-train"
-    output_dir = "../../../output/koloski-hate"
+    input_dir = "../../../datasets/pan20-fake-test"
+    output_dir = "../../../output/koloski-fake"
     evaluate(input_dir, output_dir)

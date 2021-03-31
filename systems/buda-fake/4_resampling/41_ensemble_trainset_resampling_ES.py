@@ -44,14 +44,14 @@ svm_pl = Pipeline(
     [('vect', TfidfVectorizer(ngram_range=(1, 2), min_df=7, sublinear_tf=True, use_idf=True, smooth_idf=True)),
      ('rf', SVC(C=10, kernel='linear', verbose=False, probability=True))])
 
-xgb_twc = xgb.XGBClassifier(colsample_bynode=0.8,
-                            colsample_bytree=0.8,
+xgb_twc = xgb.XGBClassifier(colsample_bynode=1,
+                            colsample_bytree=1,
                             gamma=4,
-                            learning_rate=0.3,
+                            learning_rate=0.2,
                             max_depth=4,
-                            min_child_weight=2,
+                            min_child_weight=5,
                             n_estimators=150,
-                            reg_alpha=0.3,
+                            reg_alpha=0.7,
                             subsample=0.8)
 
 X = data_es_v1["Tweets"]
