@@ -28,22 +28,22 @@ data_en_v2 = pd.read_csv(loc_data + 'clean_en_data_v2.tsv', delimiter='\t', enco
 data_en_tw_cons = pd.read_pickle(loc_data + 'en_data_tweet_consist.pkl')
 
 # best hyperparameters found for individual models
-xgb_pl = Pipeline([('vect', TfidfVectorizer(min_df=8, ngram_range=(1, 2), use_idf=True, smooth_idf=True,
+xgb_pl = Pipeline([('vect', TfidfVectorizer(min_df=9, ngram_range=(1, 2), use_idf=True, smooth_idf=True,
                                             sublinear_tf=True)),
-                   ('xgb', xgb.XGBClassifier(colsample_bytree=0.7, eta=0.3, max_depth=5, n_estimators=300,
-                                             subsample=0.8))])
+                   ('xgb', xgb.XGBClassifier(colsample_bytree=0.7, eta=0.01, max_depth=6, n_estimators=300,
+                                             subsample=0.6))])
 
 lr_pl = Pipeline(
-    [('vect', TfidfVectorizer(min_df=3, ngram_range=(1, 1), use_idf=True, smooth_idf=True, sublinear_tf=True)),
-     ('lr', LogisticRegression(C=10, penalty='l2', solver='liblinear', fit_intercept=False, verbose=0))])
+    [('vect', TfidfVectorizer(min_df=8, ngram_range=(1, 2), use_idf=True, smooth_idf=True, sublinear_tf=True)),
+     ('lr', LogisticRegression(C=1000, penalty='l2', solver='liblinear', fit_intercept=False, verbose=0))])
 
 rf_pl = Pipeline(
-    [('vect', TfidfVectorizer(min_df=3, ngram_range=(1, 1), use_idf=True, smooth_idf=True, sublinear_tf=True)),
-     ('rf', RandomForestClassifier(n_estimators=100, min_samples_leaf=10, criterion='gini'))])
+    [('vect', TfidfVectorizer(min_df=10, ngram_range=(1, 2), use_idf=True, smooth_idf=True, sublinear_tf=True)),
+     ('rf', RandomForestClassifier(n_estimators=400, min_samples_leaf=6, criterion='gini'))])
 
 svm_pl = Pipeline(
-    [('vect', TfidfVectorizer(ngram_range=(1, 1), min_df=9, sublinear_tf=True, use_idf=True, smooth_idf=True)),
-     ('rf', SVC(C=1, kernel='linear', verbose=False, probability=True))])
+    [('vect', TfidfVectorizer(ngram_range=(1, 2), min_df=4, sublinear_tf=True, use_idf=True, smooth_idf=True)),
+     ('rf', SVC(C=1000, kernel='linear', verbose=False, probability=True))])
 
 xgb_twc = xgb.XGBClassifier(colsample_bynode=0.8,
                             colsample_bytree=1,
@@ -72,12 +72,12 @@ for train_index, test_index in cv.split(X, y):
     y_train, y_test = y[train_index], y[test_index]
     preds['y_truth'] = y[test_index].values
     # LR
-    X_train, X_test = data_en_v2["Tweets"][train_index], data_en_v2["Tweets"][test_index]
+    X_train, X_test = data_en_v1["Tweets"][train_index], data_en_v1["Tweets"][test_index]
     lr_pl.fit(X_train, y_train)
     preds["lr"] = lr_pl.predict_proba(X_test)[:, 1]
 
     # SVM
-    X_train, X_test = data_en_v2["Tweets"][train_index], data_en_v2["Tweets"][test_index]
+    X_train, X_test = data_en_v1["Tweets"][train_index], data_en_v1["Tweets"][test_index]
     svm_pl.fit(X_train, y_train)
     preds["svm"] = svm_pl.predict_proba(X_test)[:, 1]
 
@@ -109,12 +109,12 @@ for train_index, test_index in cv.split(X, y):
     y_train, y_test = y[train_index], y[test_index]
     preds['y_truth'] = y[test_index].values
     # LR
-    X_train, X_test = data_en_v2["Tweets"][train_index], data_en_v2["Tweets"][test_index]
+    X_train, X_test = data_en_v1["Tweets"][train_index], data_en_v1["Tweets"][test_index]
     lr_pl.fit(X_train, y_train)
     preds["lr"] = lr_pl.predict_proba(X_test)[:, 1]
 
     # SVM
-    X_train, X_test = data_en_v2["Tweets"][train_index], data_en_v2["Tweets"][test_index]
+    X_train, X_test = data_en_v1["Tweets"][train_index], data_en_v1["Tweets"][test_index]
     svm_pl.fit(X_train, y_train)
     preds["svm"] = svm_pl.predict_proba(X_test)[:, 1]
 

@@ -72,8 +72,8 @@ def cleaning_v2(tweet_lista):
 if __name__ == "__main__":
     a = sys.argv[2]
     b = sys.argv[4]
-    a = "../../../datasets/pan21-hate-test"
-    b = "../../../output/buda-hate"
+    a = "../../../datasets/pan20-fake-test"
+    b = "../../../output/buda-fake"
     print(a)
     print(b)
     # location of used model files
@@ -147,10 +147,10 @@ if __name__ == "__main__":
     X_test_en_RF = vect_rf.transform(en_data_v1["Tweets"])
 
     vect_SVM = pickle.load(open(model_loc + 'en\\svm_vectorizer_v1.pickle', "rb"))
-    X_test_en_SVM = vect_SVM.transform(en_data_v2["Tweets"])
+    X_test_en_SVM = vect_SVM.transform(en_data_v1["Tweets"])
 
     vect_LR = pickle.load(open(model_loc + 'en\\lr_vectorizer_v1.pickle', "rb"))
-    X_test_en_LR = vect_LR.transform(en_data_v2["Tweets"])
+    X_test_en_LR = vect_LR.transform(en_data_v1["Tweets"])
 
     vect_XGB = pickle.load(open(model_loc + 'en\\vect_xgb_en_v1.pickle', "rb"))
     X_test_en_XGB = vect_XGB.transform(en_data_v2["Tweets"])
@@ -181,35 +181,35 @@ if __name__ == "__main__":
     #
 
     # initialize feature DF with ID-s per author
-    en_data_tweet_consist = pd.DataFrame(list(zip([en_data_tw["ID"][i*200] for
-                                                   i in range(int(len(en_data_tw["ID"])/200))])), columns=['ID'])
+    en_data_tweet_consist = pd.DataFrame(list(zip([en_data_tw["ID"][i*100] for
+                                                   i in range(int(len(en_data_tw["ID"])/100))])), columns=['ID'])
 
     # length stats of tweets per author (character & word)
     len_tw_char = [len(i) for i in en_data_tw["Tweets"]]
     len_tw_word = [len(i.split(" ")) for i in en_data_tw["Tweets"]]
 
     # SD
-    len_char_sd_auth = [pstdev(len_tw_char[i*200:i*200+199]) for i in range(int(len(len_tw_char)/200))]
-    len_word_sd_auth = [pstdev(len_tw_word[i*200:i*200+199]) for i in range(int(len(len_tw_word)/200))]
+    len_char_sd_auth = [pstdev(len_tw_char[i*100:i*100+99]) for i in range(int(len(len_tw_char)/100))]
+    len_word_sd_auth = [pstdev(len_tw_word[i*100:i*100+99]) for i in range(int(len(len_tw_word)/100))]
 
     # min - max - range - mean
-    len_char_min_auth = [min(len_tw_char[i*200:i*200+199]) for i in range(int(len(len_tw_char)/200))]
-    len_word_min_auth = [min(len_tw_word[i*200:i*200+199]) for i in range(int(len(len_tw_word)/200))]
+    len_char_min_auth = [min(len_tw_char[i*100:i*100+99]) for i in range(int(len(len_tw_char)/100))]
+    len_word_min_auth = [min(len_tw_word[i*100:i*100+99]) for i in range(int(len(len_tw_word)/100))]
 
-    len_char_max_auth = [max(len_tw_char[i*200:i*200+199]) for i in range(int(len(len_tw_char)/200))]
-    len_word_max_auth = [max(len_tw_word[i*200:i*200+199]) for i in range(int(len(len_tw_word)/200))]
+    len_char_max_auth = [max(len_tw_char[i*100:i*100+99]) for i in range(int(len(len_tw_char)/100))]
+    len_word_max_auth = [max(len_tw_word[i*100:i*100+99]) for i in range(int(len(len_tw_word)/100))]
 
-    len_char_rng_auth = [max(len_tw_char[i*200:i*200+199])-min(len_tw_char[i*200:i*200+199]) for
-                         i in range(int(len(len_tw_char)/200))]
-    len_word_rng_auth = [max(len_tw_word[i*200:i*200+199])-min(len_tw_word[i*200:i*200+199]) for
-                         i in range(int(len(len_tw_word)/200))]
+    len_char_rng_auth = [max(len_tw_char[i*100:i*100+99])-min(len_tw_char[i*100:i*100+99]) for
+                         i in range(int(len(len_tw_char)/100))]
+    len_word_rng_auth = [max(len_tw_word[i*100:i*100+99])-min(len_tw_word[i*100:i*100+99]) for
+                         i in range(int(len(len_tw_word)/100))]
 
-    len_char_mean_auth = [np.mean(len_tw_char[i*200:i*200+199]) for i in range(int(len(len_tw_char)/200))]
-    len_word_mean_auth = [np.mean(len_tw_word[i*200:i*200+199]) for i in range(int(len(len_tw_word)/200))]
+    len_char_mean_auth = [np.mean(len_tw_char[i*100:i*100+99]) for i in range(int(len(len_tw_char)/100))]
+    len_word_mean_auth = [np.mean(len_tw_word[i*100:i*100+99]) for i in range(int(len(len_tw_word)/100))]
 
     # vocab variety
-    tweets_szerz = [" ".join(list(en_data_tw["Tweets"])[i*200:199+i*200]) for
-                    i in range(int(len(len_tw_char)/200))]  # concatenate tweets of each author to calculate TTR
+    tweets_szerz = [" ".join(list(en_data_tw["Tweets"])[i*100:99+i*100]) for
+                    i in range(int(len(len_tw_char)/100))]  # concatenate tweets of each author to calculate TTR
 
     ttr_szerz = [ld.ttr(ld.flemmatize(i)) for i in tweets_szerz]
 
@@ -355,7 +355,7 @@ if __name__ == "__main__":
     X_test_es_SVM = vect_SVM.transform(es_data_v2["Tweets"])
 
     vect_LR = pickle.load(open(model_loc + 'es\\lr_vectorizer_v1_es.pickle', "rb"))
-    X_test_es_LR = vect_LR.transform(es_data_v2["Tweets"])
+    X_test_es_LR = vect_LR.transform(es_data["Tweets"])
 
     vect_XGB = pickle.load(open(model_loc + 'es\\vect_xgb_es_v1.pickle', "rb"))
     X_test_es_XGB = vect_XGB.transform(es_data["Tweets"])
@@ -386,35 +386,35 @@ if __name__ == "__main__":
     #
 
     # initialize feature DF with ID-s per author
-    es_data_tweet_consist = pd.DataFrame(list(zip([es_data_tw["ID"][i*200] for
-                                                   i in range(int(len(es_data_tw["ID"])/200))])), columns=['ID'])
+    es_data_tweet_consist = pd.DataFrame(list(zip([es_data_tw["ID"][i*100] for
+                                                   i in range(int(len(es_data_tw["ID"])/100))])), columns=['ID'])
 
     # length of tweets per author
     len_tw_char = [len(i) for i in es_data_tw["Tweets"]]
     len_tw_word = [len(i.split(" ")) for i in es_data_tw["Tweets"]]
 
     # SD
-    len_char_sd_auth = [pstdev(len_tw_char[i*200:i*200+199]) for i in range(int(len(len_tw_char)/200))]
-    len_word_sd_auth = [pstdev(len_tw_word[i*200:i*200+199]) for i in range(int(len(len_tw_word)/200))]
+    len_char_sd_auth = [pstdev(len_tw_char[i*100:i*100+99]) for i in range(int(len(len_tw_char)/100))]
+    len_word_sd_auth = [pstdev(len_tw_word[i*100:i*100+99]) for i in range(int(len(len_tw_word)/100))]
 
     # min - max - range - mean
-    len_char_min_auth = [min(len_tw_char[i*200:i*200+199]) for i in range(int(len(len_tw_char)/200))]
-    len_word_min_auth = [min(len_tw_word[i*200:i*200+199]) for i in range(int(len(len_tw_word)/200))]
+    len_char_min_auth = [min(len_tw_char[i*100:i*100+99]) for i in range(int(len(len_tw_char)/100))]
+    len_word_min_auth = [min(len_tw_word[i*100:i*100+99]) for i in range(int(len(len_tw_word)/100))]
 
-    len_char_max_auth = [max(len_tw_char[i*200:i*200+199]) for i in range(int(len(len_tw_char)/200))]
-    len_word_max_auth = [max(len_tw_word[i*200:i*200+199]) for i in range(int(len(len_tw_word)/200))]
+    len_char_max_auth = [max(len_tw_char[i*100:i*100+99]) for i in range(int(len(len_tw_char)/100))]
+    len_word_max_auth = [max(len_tw_word[i*100:i*100+99]) for i in range(int(len(len_tw_word)/100))]
 
-    len_char_rng_auth = [max(len_tw_char[i*200:i*200+199])-min(len_tw_char[i*200:i*200+199]) for
-                         i in range(int(len(len_tw_char)/200))]
-    len_word_rng_auth = [max(len_tw_word[i*200:i*200+199])-min(len_tw_word[i*200:i*200+199]) for
-                         i in range(int(len(len_tw_word)/200))]
+    len_char_rng_auth = [max(len_tw_char[i*100:i*100+99])-min(len_tw_char[i*100:i*100+99]) for
+                         i in range(int(len(len_tw_char)/100))]
+    len_word_rng_auth = [max(len_tw_word[i*100:i*100+99])-min(len_tw_word[i*100:i*100+99]) for
+                         i in range(int(len(len_tw_word)/100))]
 
-    len_char_mean_auth = [np.mean(len_tw_char[i*200:i*200+199]) for i in range(int(len(len_tw_char)/200))]
-    len_word_mean_auth = [np.mean(len_tw_word[i*200:i*200+199]) for i in range(int(len(len_tw_word)/200))]
+    len_char_mean_auth = [np.mean(len_tw_char[i*100:i*100+99]) for i in range(int(len(len_tw_char)/100))]
+    len_word_mean_auth = [np.mean(len_tw_word[i*100:i*100+99]) for i in range(int(len(len_tw_word)/100))]
 
     # vocab variety
-    tweets_szerz = [" ".join(list(es_data_tw["Tweets"])[i*200:199+i*200]) for
-                    i in range(int(len(len_tw_char)/200))]
+    tweets_szerz = [" ".join(list(es_data_tw["Tweets"])[i*100:99+i*100]) for
+                    i in range(int(len(len_tw_char)/100))]
     ttr_szerz = [ld.ttr(ld.flemmatize(i)) for i in tweets_szerz]
 
     # number of tags
