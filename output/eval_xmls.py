@@ -4,7 +4,7 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 import argparse
 
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score, ConfusionMatrixDisplay
 
 """
 Compares XML output with truth.txt to print classification reports and confusion matrices. 
@@ -62,7 +62,8 @@ def main():
         predicts.append(value)
         gold.append(goldictionary[key])
 
-    print(confusion_matrix(gold, predicts))
+    cm = confusion_matrix(gold, predicts)
+    cm_display = ConfusionMatrixDisplay(cm).plot()
     print(classification_report(gold, predicts))
     print(accuracy_score(gold, predicts))
 
@@ -86,7 +87,8 @@ def main():
         predicts2.append(value)
         gold2.append(goldictionary2[key])
 
-    print(confusion_matrix(gold2, predicts2))
+    cm = confusion_matrix(gold2, predicts2)
+    cm_display = ConfusionMatrixDisplay(cm).plot()
     print(classification_report(gold2, predicts2))
     print(accuracy_score(gold2, predicts2))
 

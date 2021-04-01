@@ -162,6 +162,7 @@ if __name__ == "__main__":
     en_SVM = pickle.load(open(model_loc + 'en\\svm_v1.sav', "rb"))
     # LR
     en_LR = pickle.load(open(model_loc + 'en\\lr_v1.sav', "rb"))
+    print(en_LR.coef_)
     # XGB
     en_XGB = pickle.load(open(model_loc + 'en\\xgb_en_v1.sav', "rb"))
 
